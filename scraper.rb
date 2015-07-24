@@ -9,7 +9,7 @@ end
 
 #scrapes the image files from the json data on the specified sub-reddit
 buffer = ""
-source = Net::HTTP.get(URI("http://www.reddit.com/r/thank_mr_skeltal/.json"))
+source = Net::HTTP.get(URI("https://www.reddit.com/r/trees/.json"))
 json = JSON.parse(source)
 if json
 json["data"]["children"].each { |node|
