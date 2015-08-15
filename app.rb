@@ -7,7 +7,7 @@ def input(prompt="", newline=false)
   Readline.readline(prompt, true).squeeze(" ").strip
 end
 
-#scrapes the image files from the json data on the specified sub-reddit
+#scrapes the image files from json on specified sub-reddit
 buffer = ""
 source = Net::HTTP.get(URI("https://www.reddit.com/r/ledootgeneration/.json"))
 json = JSON.parse(source)
@@ -21,7 +21,6 @@ json["data"]["children"].each { |node|
   end
 }
 end
-
 
 #serve!
 get '/' do

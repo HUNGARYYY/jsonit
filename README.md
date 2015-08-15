@@ -1,8 +1,14 @@
 # jsonit
 
-Scrapes images from a sub-reddit's JSON data and uses Sinatra to display them in a feed. Images are linked to the individual reddit post.
-By default, sinatra/WEBrick should be set to run at localhost:4567 
+## About
+Scraper that takes images from a sub-reddit's JSON data and uses Sinatra to display them in a feed. Images are linked to the individual reddit post/discussion.
 
- # TODO
+## Instructions
+Update json location in app.rb on line 12, URL must include json link. For example, the default is the "Le doot generation" sub-reddit. "https://www.reddit.com/r/ledootgeneration/.json"
 
-Asking for input of a specific sub-reddit, assigning it to a variable and using that as the reddit url would be nice. 
+![le doot generation example](http://g.recordit.co/Yuc6jcObDn.gif)
+
+^C== Sinatra has ended his set (crowd applauds)
+
+## TODO
+Will be updating soon..
